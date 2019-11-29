@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "mFYFIBbdrlMEUv9ExcLHxs0Oq0G3": {
+      "ID1": {
+        "name": "Go to shop",
+        "completed": false,
+        "dueDate": "2019/11/20",
+        "dueTime": "09:30"
+      },
+      "ID2": {
+        "name": "Get snacks",
+        "completed": false,
+        "dueDate": "2019/11/23",
+        "dueTime": "14:30"
+      },
+      "ID3": {
+        "name": "Get money",
+        "completed": false,
+        "dueDate": "2019/11/24",
+        "dueTime": "11:00"
+      }
+    }
+  }
+}
