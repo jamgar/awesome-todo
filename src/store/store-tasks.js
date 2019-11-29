@@ -77,7 +77,6 @@ const actions = {
   },
   fbReadData({ commit, dispatch }) {
     let userId = firebaseAuth.currentUser.uid;
-    userId = "zbRfdL0TuRaSOtOAh0UlWtivVak1";
     let userTasks = firebaseDb.ref(`tasks/${userId}`);
     // initial check for data
     userTasks.once(
