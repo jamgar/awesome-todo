@@ -144,6 +144,11 @@ module.exports = function(ctx) {
         // protocol: 'myapp://path',
         // Windows only
         // win32metadata: { ... }
+        //
+        // use the below property to build for Windows
+        // copy or rename the Mac version folder in the
+        // electrons folder or it will be overwritten
+        // platform: 'win32'
       },
 
       builder: {

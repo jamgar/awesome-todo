@@ -77,9 +77,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .q-scroll-area-tasks {
   display: flex;
   flex-grow: 1;
+  .mobile & {
+    flex-basis: 100px;
+  }
 }
+/* Can use the 'electron' class to target styles for the desktop app */
+/* .electron {} */
 </style>

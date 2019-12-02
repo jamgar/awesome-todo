@@ -2,7 +2,7 @@
   <div class="row q-mb-sm">
     <q-input
       outlined
-      autofocus
+      v-autofocus="{ delayCordova: 700 }"
       v-select-all
       :value="name"
       @input="$emit('update:name', $event)"
@@ -20,11 +20,13 @@
 
 <script>
 import { selectAll } from "src/directives/directive-select-all.js";
+import { autofocus } from "src/directives/directive-autofocus.js";
 
 export default {
   props: ["name"],
   directives: {
-    selectAll
+    selectAll,
+    autofocus
   }
 };
 </script>

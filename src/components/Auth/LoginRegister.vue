@@ -11,6 +11,7 @@
     <div class="row q-mb-md">
       <q-input
         ref="email"
+        type="email"
         outlined
         v-model="formData.email"
         class="col"

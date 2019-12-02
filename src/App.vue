@@ -14,6 +14,12 @@ export default {
     ...mapActions("auth", ["handleAuthStateChange"])
   },
   mounted() {
+    // detect if the call is from election app
+    if (this.$q.platform.is.electron) {
+      require("electron").ipcRenderer.on("show-settings", () => {
+        this.$router.push("/settings");
+      });
+    }
     this.getSettings();
     this.handleAuthStateChange();
   }
